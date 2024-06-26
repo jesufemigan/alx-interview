@@ -3,21 +3,12 @@ def pascal_triangle(n):
         returns a list of integers representing the Pascal's
         triangle of n.
         Returns an empty list if n <= 0
-        
-         1
-        1  1
-       1  2  1
-      1  3  3  1
-     1  4  6  4  1
-     [1]
-     [1,1]
-     [1,2,1]
-    [1,3,3,1]
-    [1,4,6,4,1]
-    
-    [[1]]
-    [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
-    
+       
+        [1]
+        [1,1]
+        [1,2,1]
+        [1,3,3,1]
+        [1,4,6,4,1]
     """
     if n <= 0:
         return []
