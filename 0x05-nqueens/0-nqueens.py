@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def is_safe(board, row, col):
     """Checks if placing a queen at (row, col) is safe."""
     for i in range(col):
@@ -13,6 +14,7 @@ def is_safe(board, row, col):
         if board[i][j] == 1:
             return False
     return True
+
 
 def solve_n_queens(board, col):
     """Solves the N-queens problem recursively."""
@@ -32,10 +34,12 @@ def solve_n_queens(board, col):
             board[i][col] = 0
     return res
 
+
 def print_solutions(solutions):
     """Prints the solutions in the required format."""
     for solution in solutions:
         print(solution)
+
 
 def main():
     """Main function to handle arguments and solve the problem."""
@@ -56,6 +60,7 @@ def main():
     board = [[0] * N for _ in range(N)]
     solve_n_queens(board, 0)
     print_solutions(solutions)
+
 
 if __name__ == "__main__":
     main()
