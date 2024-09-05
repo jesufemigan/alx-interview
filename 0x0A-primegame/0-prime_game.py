@@ -18,7 +18,7 @@ def isWinner(x, nums):
     a = [1 for x in range(sorted(nums)[-1] + 1)]
     a[0], a[1] = 0, 0
     for i in range(2, len(a)):
-        multiples_rem(a, i)
+        multiple_rem(a, i)
 
     for i in nums:
         if sum(a[0:i + 1]) % 2 == 0:
@@ -30,6 +30,7 @@ def isWinner(x, nums):
     if player_2 > player_1:
         return "Maria"
     return None
+
 
 def multiple_rem(lis, x):
     '''
